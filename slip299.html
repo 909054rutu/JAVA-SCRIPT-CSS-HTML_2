@@ -1,0 +1,19 @@
+<html>
+<body>
+<form>
+enter string:
+<input type="text" id="r1"><br>
+<input type="button" value="ok" onclick="show()">
+</form>
+</body>
+</html>
+<script>
+function show()
+{
+var s=document.getElementById("r1").value;
+if(s==s.split('').reverse( ).join(''))
+alert("string is palimdrome");
+else
+alert("string is not palindrome");
+}
+</script>

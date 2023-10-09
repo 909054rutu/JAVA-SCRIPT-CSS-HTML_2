@@ -1,0 +1,32 @@
+<html>
+<body>
+<form>
+no 1:
+<input type="number" id="r1"><br>
+no 2:
+<input type="number" id="r2"><br>
+no 3:
+<input type="number" id="r3"><br>
+<input type="button" value="ok" onclick="greater()">
+</form>
+</body>
+</html>
+<script>
+function greater()
+{
+var n1=document.getElementById("r1").value;
+var n2=document.getElementById("r2").value;
+var n3=document.getElementById("r3").value;
+var n1=parseInt(n1);
+var n2=parseInt(n2);
+var n3=parseInt(n3);
+{
+if(n1>n2 && n1>n3)
+alert('n1 greater number'+n1);
+else if(n2>n1 &&n2>n3)
+alert('n2 is greater number'+n2);
+else
+alert('n3 is greater no'+n3);
+}
+}
+</script>

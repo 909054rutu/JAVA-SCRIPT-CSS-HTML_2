@@ -1,0 +1,23 @@
+<html>
+<body>
+<form>
+enter number:
+<input type="number" id="r1"><br>
+<input type="button" value="ok" onclick="show()">
+</form>
+</body>
+</html>
+<script>
+function show()
+{
+var n=document.getElementById("r1").value;
+n=parseInt(n);
+var s=0;
+for(i=1;i<n;i++)
+{
+if(i%2==1)
+s=s+i;
+}
+alert("odd no sum="+s);
+}
+</script>

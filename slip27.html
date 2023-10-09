@@ -1,0 +1,25 @@
+<html>
+<body>
+<form>
+no:
+<input type="number" id="r1"><br>
+<input type="button" value="ok" onclick="show()">
+</form>
+</body>
+</html>
+<script>
+function show()
+{
+var n=document.getElementById("r1").value;
+n=parseInt(n);
+var s=0;
+var f=1;
+for(i=1;i<n;i++)
+{
+if(n%i==0)
+s=s+i;
+}
+alert("sum of factors="+s);
+}
+</script>
+

@@ -1,0 +1,28 @@
+<html>
+<body>
+<form>
+enter n:
+<input type="text" id="r1"><br>
+<input type="button" value="ok" onclick="show()">
+</form>
+</body>
+</html>
+<script>
+function show()
+{
+var s=0;
+var n=document.getElementById("r1").value;
+n =parseInt(n);
+n1=n;
+while(n>0)
+{
+d=n%10;
+n=parseInt(n/10);
+s=s+d*d*d;
+}
+if(n1==s)
+alert("number is armstrong");
+else
+alert("number is not armstrong");
+}
+</script>

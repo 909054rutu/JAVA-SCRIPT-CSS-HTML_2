@@ -1,0 +1,40 @@
+<html>
+<body>
+<form>
+java:
+<input type="number" id="r1"><br>
+math:
+<input type="number" id="r2"><br>
+php:
+<input type="number" id="r3"><br>
+HRM:
+<input type="number" id="r4"><br>
+python:
+<input type="number" id="r5"><br>
+rdbms:
+<input type="number" id="r6"><br>
+<input type="button" value="total" onclick="toatl()">
+</form>
+</body>
+
+</html>
+
+<script language="javascript">
+function total()
+{
+var sa=document.getElementById("r1").value;
+var sb=document.getElementById("r2").value;
+var sc=document.getElementById("r3").value;
+var sd=document.getElementById("r4").value;
+var se=document.getElementById("r5").value;
+var sf=document.getElementById("r6").value;
+sa=parseInt(sa);
+sb=parseInt(sb);
+sc=parseInt(sc);
+sd=parseInt(sd);
+se=parseInt(se);
+sf=parseInt(sf);
+var t=sa+sb+sc+sd+se+sf;
+document.write("total="+t);
+}
+</script>

@@ -1,0 +1,33 @@
+<html>
+<body>
+<form>
+enter string:
+<input type="text" id="r1"><br>
+<input type="button" value="ok" onclick="show()">
+</form>
+</body>
+</html>
+<script>
+function show()
+{
+var s1=document.getElementById("r1").value;
+var c1=0;c2=0;c3=0c4=0;c5=0;
+{
+if(s1.charAt(i)=='A'&&s1.charAt(i)=='a')
+c1++;
+ if(s1.charAt(i)=='I'&&s1.charAt(i)=='i')
+c2++;
+ if(s1.charAt(i)='O'&&s1.charAt(i)=='o')
+c3++;
+ if(s1.charAt(i)=='U'&&s1.charAt(i)=='u')
+c4++;
+ if(s1.charAt(i)=='E'&&s1.charAt(i)=='e')
+c5++;
+}
+document.write("<br> count a="+c1);
+document.write("<br> count i="+c2);
+document.write("<br> count o="+c3);
+document.write("<br> count u="+c4);
+document.write("<br> count e="+c5);
+}
+</script>

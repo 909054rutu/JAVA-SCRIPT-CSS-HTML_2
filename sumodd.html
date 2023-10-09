@@ -1,0 +1,26 @@
+<html>
+<body>
+<form>
+Enter number:
+<input type="number" id="r1"><br>
+sum of digit:
+<input type="number" id="r2"><br>
+<input type="button" value="calculate" onclick="sum_of_digit()">
+</form>
+</body>
+</html>
+<script language="javascript">
+function sum_of_digit()
+{
+var n=document.getElementById("r1").value;
+n=parseInt(n)
+var s=0;
+while(n>0)
+{
+d=n%10;
+s=s+d;
+n=parseInt(n/10);
+}
+document.getElementById("r2").value=s;
+}
+</script>

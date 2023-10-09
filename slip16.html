@@ -1,0 +1,24 @@
+<html>
+<body>
+<form>
+Enter string:
+<input type="text" id="r1"><br>
+<input type="button" value="ok" onclick="disp()">
+</form>
+</body>
+</html>
+<script>
+function disp()
+{
+var s1=document.getElementById("r1").value;
+{
+for(i=0;i<s1.length;i++)
+if(s1.charAt(i)==' ')
+document.write("*");
+else if(s1.charAt(i)>='0' &&s1.charAt(i)<='9')
+document.write("?");
+else
+document.write(s1.charAt(i));
+}
+}
+</script>

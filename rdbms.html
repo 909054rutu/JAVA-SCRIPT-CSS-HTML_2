@@ -1,0 +1,10 @@
+declare
+a int;
+INVALID_AGE  EXCEPTION;
+begin
+a:=:enter_age;
+if(a<=0) then
+raise INVALID_AGE;
+end if;
+dbms_output.put_line('age=||'a);
+end;

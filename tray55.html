@@ -1,0 +1,27 @@
+<html>
+<body>
+<form>
+n:
+<input type="number" id="r1"><br>
+<input type="button" value="ok" onclick="show()">
+</form>
+</body>
+</html>
+<script>
+function show()
+{ var s=0;
+var n=document.getElementById("r1").value;
+var n=parseInt(n);
+var n1=n;
+while(n>0)
+{
+d=n%10;
+s=s+d*d*d;
+n=parseInt(n/10);
+}
+if(s==n1)
+document.write("arm yes");
+else
+document.write("nottttt");
+}
+</script>

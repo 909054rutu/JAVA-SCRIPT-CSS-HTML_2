@@ -1,0 +1,23 @@
+<html>
+<body>
+<h1> Input Radius value and get volume of a sphere</h1>
+<form>
+Radius:<br>
+<input type="number" id="r1"><br>
+Volume:<br>
+<input type="number" id="r2"><br>
+<input type="button" value="clauculate" onclick="volume()">
+</form>
+</html>
+</body>
+<script>
+function volume()
+{
+
+var r=document.getElementById("r1").value;
+r=parseFloat(r);
+var v=3.14*r*r*r;
+document.getElementById("r2").value=v;
+}
+</script>
+

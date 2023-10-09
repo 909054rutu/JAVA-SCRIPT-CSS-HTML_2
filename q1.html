@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>-</title>
+<input type="button"  value="purple" onmousemove="r1()">
+<input type="button" value="pink" onmousemove="r2()">
+<input type="button" value="blue" onmousemove="r3()">
+<input type="button" value="red" onmousemove="r4()">
+<script language="javascript">
+function f1()
+{
+document.bgColor="purple";
+window.setTimeout("f2()",1200);
+}
+function f2()
+{
+document.bgColor="yellow";
+window.setTimeout("f3()",1200);
+}
+function f3()
+{
+document.bgColor="blue";
+window.setTimeout("f4()",1200);
+}
+function f4()
+{
+document.bgColor="red";
+window.setTimeout("f2()",1200);
+}
+</script>
+</head>

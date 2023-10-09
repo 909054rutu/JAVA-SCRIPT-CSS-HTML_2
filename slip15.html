@@ -1,0 +1,20 @@
+<html>
+<body>
+<form>
+enter  string:
+<input type="text" id="r1"><br>
+enter number:
+<input type="number" id="r2"><br>
+<input type="button" value="ok" onclick="disp()">
+</form>
+</body>
+</html>
+<script>
+function disp()
+{
+var s1=document.getElementById("r1").value;
+var n2=document.getElementById("r2").value;
+var n2=parseInt(n2)
+document.write("charcter="+s1.charAt(n2));
+}
+</script>

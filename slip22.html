@@ -1,0 +1,27 @@
+<html>
+<body>
+<form>
+enter base x:
+<input type="number" id="r1"><br>
+enter power y:
+<input type="number" id="r2"><br>
+<input type="button" value="ok" onclick="show()">
+</form>
+</body>
+</html>
+<script>
+function show()
+{
+var x=document.getElementById("r1").value;
+var y=document.getElementById("r2").value;
+x=parseInt(x);
+y=parseInt(y);
+var a=1;
+for(i=1;i<=y;i++)
+{
+a=a*x;
+}
+y++;
+alert("base to p="+a);
+}
+</script>

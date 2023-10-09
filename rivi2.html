@@ -1,0 +1,47 @@
+<html>
+<body>
+<form>
+NAME:
+<input type="text" id="r1"><br>
+CITY:
+<input type="text" id="r2"><br>
+AGGRES:
+<input type="text" id="r3"><br>
+PINCODE:
+<input type="number" id="r4"><br>
+<input type="button" value="ok" onclick="ok()">
+</form>
+</body>
+</html>
+<script>
+function ok()
+{ 
+var s1=document.getElementById("r1").value;
+var s2=document.getElementById("r2").value;
+var s3=document.getElementById("r3").value;
+var s4=document.getElementById("r4").value;
+flag=0;
+if(s1.length==0)
+{
+alert("nottttttttt empyy");
+flag=1;
+}
+ if(s4.length!=6)
+{
+alert("muuus be 6 ddddigit");
+flag=1;
+}
+if(flag==0)
+{
+document.write("name="+s1);
+document.write("name="+s2);
+document.write("name="+s3);
+document.write("name="+s4);
+}
+}
+</script>
+
+
+
+
+

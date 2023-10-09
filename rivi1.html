@@ -1,0 +1,32 @@
+<html>
+<body>
+<form>
+N1:
+<input type="number" id="r1"><br>
+N2:
+<input type="number" id="r2"><br>
+N3:
+<input type="number" id="r3"><br>
+<input type="button" value="ok" onclick="ok()">
+</form>
+</body>
+</html>
+<script>
+function ok()
+{
+var n1=document.getElementById("r1").value;
+var n2=document.getElementById("r2").value;
+var n3=document.getElementById("r3").value;
+var n1=parseInt(n1);
+var n2=parseInt(n2);
+var n3=parseInt(n3);
+{
+if(n1>n2&&n1>n3)
+alert("number n1 greater");
+else if(n2>n1&&n1>n3)
+alert("number n2 greater");
+else
+alert("number n3 greater");
+}
+}
+</script>

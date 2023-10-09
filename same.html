@@ -1,0 +1,24 @@
+<html>
+<body>
+<form>
+Enter limit:
+<input type="number" id="r1"><br>
+<input type="button" value="ok" onclick="star()">
+</form>
+</body>
+</html>
+<script language="javascript">
+function star()
+{
+var n=document.getElementById("r1").value;
+n=parseInt(n);
+for(i=1;i<=n;i++)
+{
+for(j=1;j<=i;j++)
+{
+document.write("*);
+}
+document.write("<br>");
+}
+}
+</script>

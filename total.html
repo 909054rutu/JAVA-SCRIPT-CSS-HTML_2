@@ -1,0 +1,41 @@
+<html>
+<body>
+<form>
+java:
+<input type="number" id="r1"><br>
+c:
+<input type="number" id="r2"><br>
+dbms:
+<input type="number" id="r3"><br>
+php:
+<input type="number" id="r4"><br>
+python:
+<input type="number" id="r5"><br>
+js:
+<input type="number" id="r6"><br>
+<input type="button" value="total" onclick="total()">
+</form>
+</body>
+</html>
+
+<script language="javascript">
+function total()
+{
+var s1=document.getElementById("r1").value;
+var b=document.getElementById("r2").value;
+var c=document.getElementById("r3").value;
+var d=document.getElementById("r4").value;
+var e=document.getElementById("r5").value;
+var f=document.getElementById("r6").value;
+s1=parseFloat(s1)
+b=parseFloat(b)
+c=parseFloat(c)
+d=parseFloat(d)
+e=parseFloat(e)
+f=parseFloat(f)
+var t=s1+b+c+d+e+f;
+var p=t/6;
+document.write("total="+t);
+document.write("persentage="+p);
+}
+</script>
